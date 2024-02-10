@@ -1,3 +1,3 @@
 now renders as html
 
-extension allows you to view gibberish with secret keys (only temporary)
+extension allows you to view Occultext with secret keys (only temporary)
