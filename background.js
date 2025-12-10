@@ -2,7 +2,7 @@ chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if (request.action == "translateWord") {
       var encodedWord = btoa(request.word);
-      fetch('https://frenzvalios.com/api/occultext/translate/apikey/61135?occultext=' + encodedWord)
+      fetch('https://frenzvalios.pythonanywhere.com/api/occultext/decrypt/atlas?occultext=' + encodedWord)
         .then(response => response.json())
         .then(data => {
           sendResponse({original: data.original});
@@ -15,3 +15,4 @@ chrome.runtime.onMessage.addListener(
     }
   }
 );
+
